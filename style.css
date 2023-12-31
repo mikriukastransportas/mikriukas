@@ -1,0 +1,497 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*start*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inria Sans', sans-serif;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(./img/miestas.jpg);
+    background-repeat: no-repeat;
+    background-position: center, center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+nav{
+    display: flex; 
+    width: 100%;
+    height: auto; 
+    background: rgba(0, 0, 0, 0.2);
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.logo {
+    width: 140px;
+    height: 100px;
+    margin: 10px;
+    background-image: url(img/Logo_blue_white.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; 
+    transition: 0.33s;
+}
+
+ul {
+    width: 70%;
+    height: 100px;
+    display: inherit;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+li{
+    width: 100px;
+   height: auto;
+    margin: 8px;
+}
+a{
+   display: block;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0;
+    font-size: 18px;
+}
+.logo:hover{
+    width: 160px;
+    height: 110px;  
+}
+.logo:hover + .contact {
+	opacity: 1;
+}
+.contact:hover{
+    opacity: 1;
+}
+a:hover {
+    text-shadow: 1px 1px #0E74BC;
+}
+.hero-inner {
+    width: 70vw;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    top: 15%;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;  
+}
+.hero-inner h1{
+    font-size: 50px;
+    margin: 20px; 
+    color: #fff;
+    text-shadow: 2px 2px 2px #0E74BC;       
+}
+
+.hero-inner h2 {
+    margin: 30px;
+    padding: 20px;
+    color: #FFF;
+    font-weight: 100;
+    font-size: 30px; 
+}
+
+button {
+    width: 300px;
+    height: 60px;
+    border-radius: 3px;
+    background-color:#0E74BC;
+    border: none;
+    font-size: 30px;
+    color: #FFF;
+    font-family: "Inria Sans";
+    transition: 0.33s;
+}
+.desktop_mail img {
+	display: inline-block;
+	vertical-align: bottom;
+	padding-bottom: 4px;
+}
+
+button:hover {
+    background: rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px #0E74BC;
+}
+.mobile_call {
+	display: none;
+}
+
+main p {
+	width: 100%;
+	height: auto;
+    color: #2E5559;
+    line-height: 1.6;
+}
+
+section{ 
+    margin: 0 auto;   
+    margin-top: 100px;
+    color: #000;
+    text-align: center;
+}
+
+.first h2 {
+    width: 200px;
+    height: auto;
+    margin: 50px auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 34px;
+}
+
+.line{
+    width: 70px;
+    margin: 0 auto;
+    border-bottom: 2px solid #0E74BC;
+}
+h3 {
+    margin: 20px auto;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+}
+.service{
+    display: inline-block;
+    width: 40%; 
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: justify; 
+    vertical-align: top;
+}
+
+.serv{
+    width: 100px;
+    height: 100px;
+    margin: 30px auto;
+    border-radius: 100%;
+    transition: 0.3s;
+}
+.serv:hover{
+    width: 70px;
+    height: 70px;
+    margin: 30px auto;
+    
+}
+.img1 {
+    
+    background-image: url(foto/icon.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.second {
+	width: 100%;
+	height: auto;
+	background-color: #f8f8f8;
+    text-align: center;
+}
+.about, .img_about{
+    display: inline-block;
+}
+.about {
+    width: 45%;
+    height: auto;
+    margin: 50px;
+    padding: 50px;
+    text-align: justify;
+}
+
+.img_about{
+    width: 45%;
+    height: 500px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+    background-image:url(foto/kelias.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about, .img_about{
+	vertical-align: bottom;
+}
+
+.line2{
+    width: 70px;
+    border-bottom: 2px solid #0E74BC;
+}
+.second h2{
+    width: auto;
+    height: auto;
+    margin: 50px 0;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 34px;
+}
+
+.galery {
+	width: 100%;
+	height: auto;
+	margin-top: 60px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: #262323;
+}
+
+.card {
+    position: relative;
+    width: 350px;
+    height: 330px;
+    transform-style: preserve-3d;
+    margin: 5px;
+}
+.card .face{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    transition: 2s ease-in-out;
+    transform: perspective(500px) rotateY(0deg);
+    cursor:context-menu;
+}
+.card .face.front, .face.back {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;	
+}
+.card .face.front1{
+   	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(./foto/mikriukas1.jpg);
+}
+.card .face.front2{
+   	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(./foto/mikriukas2.jpg);
+}
+.card .face.front3{
+   	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(./foto/mikriukas3.jpg);
+}
+
+.card:hover .face.front {
+   transform: perspective(500px) rotateY(180deg);
+}
+.card:hover .face.front, .face.back{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.card .face.back1{
+    background-image: url(./foto/mikriukas2.jpg);
+}
+.card .face.back2{
+    background-image: url(./foto/mikriukas1.jpg);
+}
+.card .face.back3{
+    background-image: url(./foto/mikriukas3.jpg);
+}
+
+.card .face.back{
+	transform: perspective(500px) rotateY(180deg);
+}
+.card:hover .face.back {
+   transform: perspective(500px) rotateY(360deg); 
+}
+.card .face h2 {
+	width: 150px;
+    transform: perspective(500px) translateZ(50px);  
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 20px;
+	text-shadow: 1px 1px #000;
+	color: #fff;
+}
+footer{
+	width: 100%;
+	height: auto;
+    padding: 20px;
+	background-color: #000;
+	color: #fff;
+	font-family: 'Roboto Condensed', sans-serif;
+	line-height: 2em;
+	font-size: 16px;
+	letter-spacing: 1px;
+    text-align: center;
+}
+.foot_contact, .foot_menu, .map {
+    display: inline-block;
+	width: 300px;
+	height: 200px;
+	border-left: 1px solid grey;
+	margin: 10px;
+    padding-left: 15px;
+    vertical-align: top;
+}
+.foot_menu a{
+    width: auto;
+}
+.facebook{
+    padding-left: 0px;
+}
+iframe{
+    height: 200px;
+}
+footer a{
+	display: block;
+	width: auto;
+	padding: 0px;
+	text-align: left;
+}
+footer p{
+    margin: 30px;
+    
+}
+
+@media only screen and (max-width: 500px) {
+    nav{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    ul{
+        flex-direction: column;
+    }
+    .foot_menu, .foot_contact, .map{
+        width: 100%;
+    }
+    .mobile_call {
+	display: block;
+        
+}
+    .desktop_mail{
+        display:none;
+}
+}
+
+@media only screen and (max-width: 700px) {
+    header{
+        height: auto;
+    }
+    ul{
+        margin: 10px;
+        padding: 0px;
+        width: auto;
+        height: auto;
+    }
+    
+	.hero-inner {
+	width: 100%;
+
+	}
+    .hero-inner h1{
+    font-size: 40px;
+    margin: 10px;
+    }
+
+	.hero-inner h2 {
+    margin: 20px;
+    padding: 10px;
+    font-size: 20px; 
+	}
+
+	button {
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+	}
+	.first h2 {
+    margin-bottom: 0px; 
+	}
+    section{  
+    margin-top: 50px;
+	}
+	.service{
+	width: 100%;
+	}
+	
+    .about, .img_about {
+        width: 100%;
+        margin: 0;
+        
+    }
+    iframe{
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
